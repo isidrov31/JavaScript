@@ -146,8 +146,8 @@ var c = 'estoy en un bloque'
 //     console.log('no puede entrar')
 // }
 
-let edad = prompt()
-let nombredogo = prompt()
+let edad = prompt('Cual es tu edad?')
+let nombredogo = prompt('Cual es tu nombre?')
 
 if (edad > 18 && nombredogo == 'nicolas') {
     alert('sos alto puto');
