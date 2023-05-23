@@ -1,0 +1,84 @@
+
+        /* Estilos de la tabla */
+        .type-operators {
+        border-collapse: collapse;
+        width: 100%;
+        }
+    
+        .type-operators th, td {
+        text-align: left;
+        padding: 8px;
+        }
+    
+        .type-operators th {
+        background-color: #f2f2f2;
+        }
+    
+        /* Estilos de las celdas */
+        .arithmetic {
+        background-color: #e6f7ff;
+        }
+    
+        .assignment {
+        background-color: #f9e6ff;
+        }
+    
+        .comparison {
+        background-color: #e6ffe6;
+        }
+    
+        .logical {
+        background-color: #fff9e6;
+        }
+
+        /* Estilos de la tabla */
+        .type-data {
+        border-collapse: collapse;
+        width: 100%;
+        }
+        .type-data th, td {
+        text-align: left;
+        padding: 8px;
+        }
+
+        .type-data th {
+        background-color: #f2f2f2;
+        }
+
+      /* Estilos de las celdas */
+        .primitive {
+        background-color: #e6f7ff;
+        }
+
+        .object {
+        background-color: #f9e6ff;
+        }
+
+        .special {
+        background-color: #e6ffe6;
+        }
+
+        .result {
+            background-color: #f2f2f2;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .type-conditional {
+            border-collapse: collapse;
+            width: 100%;
+        }
+    
+        .type-conditional th, td {
+            text-align: left;
+            padding: 8px;
+        }
+    
+        .type-conditional th {
+            background-color: #f2f2f2;
+        }
+
+          /* Estilos de las celdas */
+        .conditional {
+            background-color: #e6f7ff;
+        }
