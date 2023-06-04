@@ -1,0 +1,395 @@
+  <!-- <Main>
+
+  
+
+    <h2>Como saber que tipo de datos estamos manejando</h2>
+    <span>// console.log(typeof 5)
+        // console.log(typeof '5')</span> -->
+
+    <!-- Prompt -->
+    <!-- <h2>Prompt</h2>
+    <span>nos da la posibilidad de ingresar algo
+
+        // let dato = prompt('hola como te llamas')
+        // console.log(dato)   </span>
+    Template String -->
+    <!-- <h2>Template String en JavaScript</h2>
+    <p>El Template String, también conocido como Template Literal, es una característica de JavaScript que permite la creación de cadenas de texto más legibles y flexibles.</p>
+    <h3>Ejemplo:</h3>
+    <div class="result">
+    <h4>Concatenación de cadenas de texto:</h4>
+    <p id="concatenation"></p>
+    <h4>Template String:</h4>
+    <p id="template"></p>
+    </div> --> 
+    <!-- Tipos de Condicionales -->
+    <!-- <h2>Condicionales en JavaScript</h2>
+    <table class="conditional">
+    <tr>
+        <th>Condicional</th>
+        <th>Descripción</th>
+    </tr>
+    <tr class="conditional">
+        <td>If</td>
+        <td>Se utiliza para ejecutar un bloque de código si una condición es verdadera.</td>
+    </tr>
+    <tr class="conditional">
+        <td>If...else</td>
+        <td>Se utiliza para ejecutar un bloque de código si una condición es verdadera y otro bloque si la condición es falsa.</td>
+    </tr>
+    <tr class="conditional">
+        <td>If...else if...else</td>
+        <td>Se utiliza para ejecutar diferentes bloques de código en función de diferentes condiciones.</td>
+    </tr>
+    <tr class="conditional">
+        <td>Switch</td>
+        <td>Se utiliza para seleccionar uno de varios bloques de código a ejecutar.</td>
+    </tr>
+    <tr class="conditional">
+        <td>Ternary Operator</td>
+        <td>Se utiliza para asignar un valor o ejecutar una expresión en función de una condición.</td>
+    </tr>
+    </table> -->
+
+    <!-- Scope -->
+    <!-- <h2>Scope</h2>
+    <table class="scope">
+        <tr>
+        <th>Scope</th>
+        <th>Descripción</th>
+        <th>Ejemplo</th>
+        </tr>
+        <tr>
+        <td>Global Scope</td>
+        <td>Las variables declaradas fuera de cualquier función tienen alcance global y se pueden acceder desde cualquier parte del código.</td>
+        <td>
+            <pre>
+            <code>
+    let nombre = "Juan";
+
+    function saludar() {
+    console.log("Hola, " + nombre);
+    }
+
+    saludar(); // Imprime "Hola, Juan"
+            </code>
+            </pre>
+        </td>
+        </tr>
+        <tr>
+        <td>Local Scope</td>
+        <td>Las variables declaradas dentro de una función tienen alcance local y solo se pueden acceder desde dentro de esa función.</td>
+        <td>
+            <pre>
+            <code>
+    function saludar() {
+    let nombre = "Ana";
+    console.log("Hola, " + nombre);
+    }
+
+    saludar(); // Imprime "Hola, Ana"
+    console.log(nombre); // Genera un error, nombre no está definido en este ámbito
+            </code>
+            </pre>
+        </td>
+        </tr>
+        <tr>
+        <td>Block Scope</td>
+        <td>Las variables declaradas con "let" o "const" dentro de un bloque delimitado por llaves (por ejemplo, un bucle o una declaración "if") tienen alcance limitado a ese bloque.</td>
+        <td>
+            <pre>
+            <code>
+    function saludar() {
+    if (true) {
+        let mensaje = "Hola";
+        console.log(mensaje);
+    }
+      console.log(mensaje); // Genera un error, mensaje no está definido en este ámbito
+    }
+
+    saludar(); // Imprime "Hola"
+            </code>
+            </pre>
+        </td>
+        </tr>
+    </table> -->
+    <!-- Switch -->
+    <!-- <h2>Switch</h2>
+    <table class="switch">
+        <tr>
+        <th>Valor</th>
+        <th>Descripción</th>
+        <th>Ejemplo</th>
+        </tr>
+        <tr>
+        <td>1</td>
+        <td>Se ejecuta el código correspondiente al caso 1.</td>
+        <td>
+            <pre>
+            <code>
+    let valor = 1;
+
+    switch (valor) {
+    case 1:
+        console.log("El valor es 1");
+        break;
+    case 2:
+        console.log("El valor es 2");
+        break;
+    default:
+        console.log("El valor no es ni 1 ni 2");
+    }
+            </code>
+            </pre>
+        </td>
+        </tr>
+        <tr>
+        <td>2</td>
+        <td>Se ejecuta el código correspondiente al caso 2.</td>
+        <td>
+            <pre>
+            <code>
+    let valor = 2;
+
+    switch (valor) {
+    case 1:
+        console.log("El valor es 1");
+        break;
+    case 2:
+        console.log("El valor es 2");
+        break;
+    default:
+        console.log("El valor no es ni 1 ni 2");
+    }
+            </code>
+            </pre>
+        </td>
+        </tr>
+        <tr>
+        <td>3</td>
+        <td>No hay caso definido para 3, se ejecuta el código del caso predeterminado (default).</td>
+        <td>
+            <pre>
+            <code>
+    let valor = 3;
+
+    switch (valor) {
+    case 1:
+        console.log("El valor es 1");
+        break;
+    case 2:
+        console.log("El valor es 2");
+        break;
+    default:
+        console.log("El valor no es ni 1 ni 2");
+    }
+            </code>
+            </pre>
+        </td>
+        </tr>
+    </table> -->
+
+    <!-- Funciones -->
+    <!-- <h1>Funciones en JavaScript</h1>
+
+    <h2>Definición de una función</h2>
+    <p>Una función en JavaScript es un bloque de código reutilizable que se puede invocar varias veces. Puede aceptar argumentos y devolver un resultado opcional. Se pueden definir funciones de la siguiente manera:</p>
+
+    <div class="code">
+    <pre>
+        <code>
+  // Definición de una función
+function sumar(a, b) {
+    return a + b;
+}
+        </code>
+    </pre>
+    </div>
+
+    <h2>Llamando a una función</h2>
+    <p>Una vez que se ha definido una función, se puede llamar o invocar en cualquier parte del código. Para llamar a una función, se utiliza su nombre seguido de paréntesis y, opcionalmente, se pasan los argumentos necesarios:</p>
+
+    <div class="code">
+    <pre>
+        <code>
+  // Llamando a la función sumar
+var resultado = sumar(3, 5);
+  console.log(resultado); // Imprime 8
+        </code>
+    </pre>
+    </div>
+
+    <h2>Tipo de funciones</h2>
+    <p>En JavaScript, hay diferentes tipos de funciones, como funciones con nombre, funciones anónimas y funciones de flecha:</p>
+
+    <ul>
+    <li><strong>Funciones con nombre:</strong> Son funciones que tienen un nombre y se pueden llamar a través de ese nombre.</li>
+    <li><strong>Funciones anónimas:</strong> Son funciones que no tienen un nombre y se pueden asignar a variables o pasar como argumentos a otras funciones.</li>
+    <li><strong>Funciones de flecha:</strong> Son una forma más concisa de escribir funciones anónimas utilizando la sintaxis de flecha (=>).</li>
+    </ul>
+
+    <div class="code">
+    <pre>
+        <code>
+  // Función con nombre
+function saludar(nombre) {
+    console.log("¡Hola, " + nombre + "!");
+}
+
+  // Función anónima asignada a una variable
+var mostrarMensaje = function() {
+    console.log("Este es un mensaje.");
+};
+
+  // Función de flecha
+var sumar = (a, b) => a + b;
+        </code>
+    </pre>
+    </div>
+
+    <h2>Resultado</h2>
+    <div class="result">
+    <p>Abre la consola del navegador para ver los resultados de las funciones llamadas en el código.</p>
+    </div> -->
+
+<!-- Ciclos -->
+<!-- <h1>Ciclos en JavaScript</h1>
+
+  <h2>Ciclo "for"</h2>
+  <p>El ciclo "for" se utiliza para repetir un bloque de código un número específico de veces. Tiene tres partes: inicialización, condición y actualización. Aquí hay un ejemplo:</p>
+
+  <div class="code">
+    <pre>
+      <code>
+// Ciclo "for" para imprimir los números del 1 al 5
+for (var i = 1; i <= 5; i++) {
+  console.log(i);
+}
+      </code>
+    </pre>
+  </div>
+
+  <h2>Ciclo "while"</h2>
+  <p>El ciclo "while" se utiliza para repetir un bloque de código mientras se cumpla una condición específica. Aquí hay un ejemplo:</p>
+
+  <div class="code">
+    <pre>
+      <code>
+// Ciclo "while" para imprimir los números del 1 al 5
+var i = 1;
+while (i <= 5) {
+  console.log(i);
+  i++;
+}
+      </code>
+    </pre>
+  </div>
+
+  <h2>Tipo de ciclos</h2>
+  <p>Además de los ciclos "for" y "while", JavaScript también tiene otros tipos de ciclos, como el ciclo "do-while" y el ciclo "for...in".</p>
+
+  <ul>
+    <li><strong>Ciclo "do-while":</strong> Similar al ciclo "while", pero se asegura de que el bloque de código se ejecute al menos una vez, antes de verificar la condición.</li>
+    <li><strong>Ciclo "for...in":</strong> Utilizado para iterar sobre las propiedades de un objeto.</li>
+  </ul>
+
+  <div class="code">
+    <pre>
+      <code>
+// Ciclo "do-while" para imprimir los números del 1 al 5
+var i = 1;
+do {
+  console.log(i);
+  i++;
+} while (i <= 5);
+
+// Ciclo "for...in" para iterar sobre las propiedades de un objeto
+var person = {
+  name: 'John',
+  age: 30,
+  city: 'New York'
+};
+
+for (var prop in person) {
+  console.log(prop + ': ' + person[prop]);
+}
+      </code>
+    </pre>
+  </div>
+
+  <h2>Resultado</h2>
+  <div class="result">
+    <p>Abre la consola del navegador para ver los resultados de los ciclos llamados en el código.</p>
+  </div> -->
+
+  <!-- Arrays -->
+  <!-- <h1>Arrays en JavaScript</h1>
+
+  <h2>Definición de un array</h2>
+  <p>Un array en JavaScript es una estructura de datos que permite almacenar varios elementos en una sola variable. Puedes definir un array de la siguiente manera:</p>
+
+  <div class="code">
+    <pre>
+      <code>
+// Definición de un array de números
+var numeros = [1, 2, 3, 4, 5];
+
+// Definición de un array de cadenas de texto
+var frutas = ['manzana', 'banana', 'naranja'];
+      </code>
+    </pre>
+  </div>
+
+  <h2>Acceso a los elementos del array</h2>
+  <p>Puedes acceder a los elementos individuales de un array utilizando su índice, que comienza en 0. Aquí hay un ejemplo:</p>
+
+  <div class="code">
+    <pre>
+      <code>
+// Acceso a los elementos del array
+console.log(numeros[0]); // Imprime 1
+console.log(frutas[2]); // Imprime "naranja"
+      </code>
+    </pre>
+  </div>
+
+  <h2>Modificación de elementos del array</h2>
+  <p>Puedes modificar los elementos de un array asignando nuevos valores a través de su índice. Aquí hay un ejemplo:</p>
+
+  <div class="code">
+    <pre>
+      <code>
+// Modificación de elementos del array
+numeros[1] = 10;
+frutas[0] = 'pera';
+
+console.log(numeros); // Imprime [1, 10, 3, 4, 5]
+console.log(frutas); // Imprime ['pera', 'banana', 'naranja']
+      </code>
+    </pre>
+  </div>
+
+  <h2>Propiedades y métodos de los arrays</h2>
+  <p>Los arrays en JavaScript tienen propiedades y métodos incorporados que facilitan su manipulación. Algunos ejemplos son:</p>
+
+  <div class="code">
+    <pre>
+      <code>
+console.log(numeros.length); // Propiedad "length" para obtener la longitud del array
+
+numeros.push(6); // Método "push" para agregar un elemento al final del array
+console.log(numeros); // Imprime [1, 10, 3, 4, 5, 6]
+
+numeros.pop(); // Método "pop" para eliminar el último elemento del array
+console.log(numeros); // Imprime [1, 10, 3, 4, 5]
+      </code>
+    </pre>
+  </div>
+
+  <h2>Resultado</h2>
+  <div class="result">
+    <p>Abre la consola del navegador para ver los resultados de los arrays en el código.</p>
+  </div> -->
+
+  <!-- LINK JS -->
+

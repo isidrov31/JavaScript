@@ -8,217 +8,280 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <!DOCTYPE html>
-<head>
-    <!DOCTYPE html>
-    <html>
-    <head>
-    </head>
-    <body>
-    <h2>Tipos de Operadores en JavaScript</h2>
-    <table class="type-operators">
-        <tr>
-        <th>Tipo de Operador</th>
-        <th>Significado</th>
-        </tr>
-        <tr class="arithmetic">
-        <td>Operadores Aritméticos</td>
-        <td>Se utilizan para realizar operaciones matemáticas en JavaScript.</td>
-        </tr>
-        <tr class="arithmetic">
-        <td>+</td>
-        <td>Suma dos valores.</td>
-        </tr>
-        <tr class="arithmetic">
-        <td>-</td>
-        <td>Resta el segundo valor del primero.</td>
-        </tr>
-        <tr class="arithmetic">
-        <td>*</td>
-        <td>Multiplica dos valores.</td>
-        </tr>
-        <tr class="arithmetic">
-        <td>/</td>
-        <td>Divide el primer valor por el segundo.</td>
-        </tr>
-        <tr class="arithmetic">
-        <td>%</td>
-        <td>Devuelve el resto de la división entera de un valor por otro.</td>
-        </tr>
-        <tr class="assignment">
-        <td>Operadores de Asignación</td>
-        <td>Se utilizan para asignar valores a variables en JavaScript.</td>
-        </tr>
-        <tr class="assignment">
-        <td>=</td>
-        <td>Asigna el valor de la expresión a la variable.</td>
-        </tr>
-        <tr class="assignment">
-        <td>+=</td>
-        <td>Incrementa el valor de la variable en la cantidad especificada.</td>
-        </tr>
-        <tr class="assignment">
-        <td>-=</td>
-        <td>Decrementa el valor de la variable en la cantidad especificada.</td>
-        </tr>
-        <tr class="assignment">
-        <td>*=</td>
-        <td>Multiplica el valor de la variable por la cantidad especificada y lo asigna.</td>
-        </tr>
-        <tr class="assignment">
-        <td>/=</td>
-        <td>Divide el valor de la variable por la cantidad especificada y lo asigna.</td>
-        </tr>
-        <tr class="comparison">
-        <td>Operadores de Comparación</td>
-        <td>Se utilizan para comparar valores en JavaScript.</td>
-        </tr>
-        <tr class="comparison">
-        <td>==</td>
-        <td>Comprueba si dos valores son iguales.</td>
-        </tr>
-        <tr class="comparison">
-        <td>===</td>
-        <td>Comprueba si dos valores son iguales en valor y tipo.</td>
-        </tr>
-        <tr class="comparison">
-        <td>!=</td>
-        <td>Comprueba si dos valores son diferentes.</td>
-        </tr>
-        <tr class="comparison">
-        <td>!==</td>
-        <td>Comprueba si dos valores son diferentes en valor o tipo.</td>
-        </tr>
-        <tr class="comparison">
-        <td>&gt;</td>
-        <td>Comprueba si el primer valor es mayor que el segundo.</td>
-        </tr>
-        <tr class="comparison">
-        <td>&lt;</td>
-        <td>Comprueba si el primer valor es menor que el segundo.</td>
-        </tr>
-        <tr class="comparison">
-        <td>&gt;=</td>
-        <td>Comprueba si el primer valor es mayor o igual que el segundo.</td>
-        </tr>
-        <tr class="comparison">
-        <td>&lt;=</td>
-        <td>Comprueba si el primer valor es menor o igual que el segundo.</td>
-        </tr>
-        <tr class="logical">
-        <td>Operadores Lógicos</td>
-        <td>Se utilizan para realizar operaciones lógicas en JavaScript.</td>
-        </tr>
-        <tr class="logical">
-        <td>&amp;&amp;</td>
-        <td>Evalúa si ambas condiciones son verdaderas.</td>
-        </tr>
-        <tr class="logical">
-        <td>||</td>
-        <td>Evalúa si al menos una de las condiciones es verdadera.</td>
-        </tr>
-        <tr class="logical">
-        <td>!</td>
-        <td>Devuelve el valor opuesto de la condición (negación lógica).</td>
-        </tr>
-    </table>
-    </body>
-    </html>
-    <table class="type-date">
-        <tr>
-        <th>Tipo de Dato</th>
-        <th>Descripción</th>
-        </tr>
-        <tr class="primitive">
-        <td>Tipos de Datos Primitivos</td>
-        <td>Representan valores simples en JavaScript.</td>
-        </tr>
-        <tr class="primitive">
-        <td>Number</td>
-        <td>Representa números, tanto enteros como decimales.</td>
-        </tr>
-        <tr class="primitive">
-        <td>String</td>
-        <td>Representa una secuencia de caracteres.</td>
-        </tr>
-        <tr class="primitive">
-        <td>Boolean</td>
-        <td>Representa un valor lógico: verdadero o falso.</td>
-        </tr>
-        <tr class="primitive">
-        <td>Null</td>
-        <td>Representa la ausencia intencional de cualquier objeto o valor.</td>
-        </tr>
-        <tr class="primitive">
-        <td>Undefined</td>
-        <td>Representa una variable que no tiene un valor asignado.</td>
-        </tr>
-        <tr class="object">
-        <td>Objetos</td>
-        <td>Representan una colección de propiedades relacionadas.</td>
-        </tr>
-        <tr class="object">
-        <td>Array</td>
-        <td>Representa una lista ordenada de valores.</td>
-        </tr>
-        <tr class="object">
-        <td>Object</td>
-        <td>Representa un objeto con propiedades y métodos.</td>
-        </tr>|
-        <tr class="object">
-        <td>Function</td>
-        <td>Representa un bloque de código reutilizable.</td>
-        </tr>
-        <tr class="special">
-        <td>Tipos de Datos Especiales</td>
-        <td>Representan valores especiales en JavaScript.</td>
-        </tr>
-        <tr class="special">
-        <td>Symbol</td>
-        <td>Representa un valor único e inmutable que se utiliza como identificador de propiedad.</td>
-        </tr>
-    </table>
+  <div class="contenedor">
+    <div class="navbar">Navbar</div>
+    <section id="widget">
 
-    <h2>Template String en JavaScript</h2>
-    <p>El Template String, también conocido como Template Literal, es una característica de JavaScript que permite la creación de cadenas de texto más legibles y flexibles.</p>
+      <!-- Tipos de Variables en JavaScript -->
+      <div class="widget1">
+        <h2 class="titulo">Tipos de Variables en JavaScript</h2>
+        <div class="table">
+          <table class="variabletypes">
+            <tr>
+              <th>Tipo de Variable</th>
+              <th>Descripción</th>
+              <th>Ejemplo</th>
+            </tr>
+            <tr>
+              <td>Number</td>
+              <td>Representa números, ya sea enteros o decimales</td>
+              <td>let edad = 25;</td>
+            </tr>
+            <tr>
+              <td>String</td>
+              <td>Representa cadenas de texto</td>
+              <td>let nombre = "Juan";</td>
+            </tr>
+            <tr>
+              <td>Boolean</td>
+              <td>Representa un valor lógico: verdadero (true) o falso (false)</td>
+              <td>let esMayorDeEdad = true;</td>
+            </tr>
+            <tr>
+              <td>Array</td>
+              <td>Representa una colección ordenada de valores</td>
+              <td>let numeros = [1, 2, 3, 4, 5];</td>
+            </tr>
+            <tr>
+              <td>Object</td>
+              <td>Representa una entidad con propiedades y métodos</td>
+              <td>let persona = { nombre: "Ana", edad: 30 };</td>
+            </tr>
+            <tr>
+              <td>Null</td>
+              <td>Representa la ausencia intencional de cualquier objeto o valor</td>
+              <td>let resultado = null;</td>
+            </tr>
+            <tr>
+              <td>Undefined</td>
+              <td>Representa una variable que no ha sido asignada</td>
+              <td>let dato;</td>
+            </tr>
+          </table>
+        </div>
+      </div>
 
-    <h3>Ejemplo:</h3>
-    <div class="result">
-    <h4>Concatenación de cadenas de texto:</h4>
-    <p id="concatenation"></p>
+      <!-- Prompt -->
+      <div class="widget2">
+        <h3>El Prompt</h3>
+        <span>El prompt es un método en JavaScript que muestra un cuadro de diálogo modal en el navegador, donde el usuario puede ingresar texto.
+        </span>
+        <input id="prompt" classtype="text" placeholder="Escribe una pregunta">
+        <button id="executePrompt">Ver Prompt</button>
+      </div>
 
-    <h4>Template String:</h4>
-    <p id="template"></p>
-    </div>
+      <!-- Alert -->
+      <div class="widget3">
+        <h3>Alert</h3>
+        <span>El método Window.alert() muestra un diálogo de alerta con un mensaje opcional, y aguardará hasta que el usuario cierre la ventana de diálogo.
+        </span>
+        <input id="alert" classtype="text" placeholder="Escribe una frase">
+        <button id="executeAlert">Ver Alert</button>
+      </div>
 
-    <h2>Condicionales en JavaScript</h2>
-    <table class="conditional">
-    <tr>
-        <th>Condicional</th>
-        <th>Descripción</th>
-    </tr>
-    <tr class="conditional">
-        <td>If</td>
-        <td>Se utiliza para ejecutar un bloque de código si una condición es verdadera.</td>
-    </tr>
-    <tr class="conditional">
-        <td>If...else</td>
-        <td>Se utiliza para ejecutar un bloque de código si una condición es verdadera y otro bloque si la condición es falsa.</td>
-    </tr>
-    <tr class="conditional">
-        <td>If...else if...else</td>
-        <td>Se utiliza para ejecutar diferentes bloques de código en función de diferentes condiciones.</td>
-    </tr>
-    <tr class="conditional">
-        <td>Switch</td>
-        <td>Se utiliza para seleccionar uno de varios bloques de código a ejecutar.</td>
-    </tr>
-    <tr class="conditional">
-        <td>Ternary Operator</td>
-        <td>Se utiliza para asignar un valor o ejecutar una expresión en función de una condición.</td>
-    </tr>
-    </table>
+      <!-- Tipos de Operadores en JavaScript -->
+      <div class="widget4">
+        <h2 class="titulo">Tipos de Operadores en JavaScript</h2>
+        <div class="table">
+          <table class="operatortypes">
+          <tr>
+          <th>Tipo de Operador</th>
+          <th>Significado</th>
+          </tr>
+          <tr class="arithmetic">
+          <td>Operadores Aritméticos</td>
+          <td>Se utilizan para realizar operaciones matemáticas en JavaScript.</td>
+          </tr>
+          <tr class="arithmetic">
+          <td>+</td>
+          <td>Suma dos valores.</td>
+          </tr>
+          <tr class="arithmetic">
+          <td>-</td>
+          <td>Resta el segundo valor del primero.</td>
+          </tr>
+          <tr class="arithmetic">
+          <td>*</td>
+          <td>Multiplica dos valores.</td>
+          </tr>
+          <tr class="arithmetic">
+          <td>/</td>
+          <td>Divide el primer valor por el segundo.</td>
+          </tr>
+          <tr class="arithmetic">
+          <td>%</td>
+          <td>Devuelve el resto de la división entera de un valor por otro.</td>
+          </tr>
+          <tr class="assignment">
+          <td>Operadores de Asignación</td>
+          <td>Se utilizan para asignar valores a variables en JavaScript.</td>
+          </tr>
+          <tr class="assignment">
+          <td>=</td>
+          <td>Asigna el valor de la expresión a la variable.</td>
+          </tr>
+          <tr class="assignment">
+          <td>+=</td>
+          <td>Incrementa el valor de la variable en la cantidad especificada.</td>
+          </tr>
+          <tr class="assignment">
+          <td>-=</td>
+          <td>Decrementa el valor de la variable en la cantidad especificada.</td>
+          </tr>
+          <tr class="assignment">
+          <td>*=</td>
+          <td>Multiplica el valor de la variable por la cantidad especificada y lo asigna.</td>
+          </tr>
+          <tr class="assignment">
+          <td>/=</td>
+          <td>Divide el valor de la variable por la cantidad especificada y lo asigna.</td>
+          </tr>
+          <tr class="comparison">
+          <td>Operadores de Comparación</td>
+          <td>Se utilizan para comparar valores en JavaScript.</td>
+          </tr>
+          <tr class="comparison">
+          <td>==</td>
+          <td>Comprueba si dos valores son iguales.</td>
+          </tr>
+          <tr class="comparison">
+          <td>===</td>
+          <td>Comprueba si dos valores son iguales en valor y tipo.</td>
+          </tr>
+          <tr class="comparison">
+          <td>!=</td>
+          <td>Comprueba si dos valores son diferentes.</td>
+          </tr>
+          <tr class="comparison">
+          <td>!==</td>
+          <td>Comprueba si dos valores son diferentes en valor o tipo.</td>
+          </tr>
+          <tr class="comparison">
+          <td>&gt;</td>
+          <td>Comprueba si el primer valor es mayor que el segundo.</td>
+          </tr>
+          <tr class="comparison">
+          <td>&lt;</td>
+          <td>Comprueba si el primer valor es menor que el segundo.</td>
+          </tr>
+          <tr class="comparison">
+          <td>&gt;=</td>
+          <td>Comprueba si el primer valor es mayor o igual que el segundo.</td>
+          </tr>
+          <tr class="comparison">
+          <td>&lt;=</td>
+          <td>Comprueba si el primer valor es menor o igual que el segundo.</td>
+          </tr>
+          <tr class="logical">
+          <td>Operadores Lógicos</td>
+          <td>Se utilizan para realizar operaciones lógicas en JavaScript.</td>
+          </tr>
+          <tr class="logical">
+          <td>&amp;&amp;</td>
+          <td>Evalúa si ambas condiciones son verdaderas.</td>
+          </tr>
+          <tr class="logical">
+          <td>||</td>
+          <td>Evalúa si al menos una de las condiciones es verdadera.</td>
+          </tr>
+          <tr class="logical">
+          <td>!</td>
+          <td>Devuelve el valor opuesto de la condición (negación lógica).</td>
+          </tr>
+          </table>
+        </div>
+      </div>
 
-    <script src="index.js"></script>
+      <!-- Scope -->
+      <div class="widget5">
+        <h2 class="titulo">Scope</h2>
+        <div class="what-is-scope">
+        <ul>
+          <li><b>Scope Global:</b>Las variables declaradas fuera de cualquier función tienen un alcance global. Esto significa que son accesibles desde cualquier parte del código, ya sea dentro de funciones, bucles o bloques de código.</li>
+          <li><b>Scope Local:</b>Las variables declaradas dentro de una función tienen un alcance local. Esto significa que solo pueden ser accedidas desde dentro de la función donde se declaran. Estas variables no están disponibles fuera de la función y se eliminan de la memoria una vez que la función finaliza su ejecución.</li>
+          <li><b>JavaScript</b> también tiene scopes de bloque introducidos por la declaración let y const en ES6. Las variables declaradas con let y const tienen un alcance de bloque, lo que significa que solo son accesibles dentro del bloque de código donde se declaran.</li>
+        </ul>
+      </div>
+      </div>
+
+      <!-- IF ELSE -->
+      <div class="widget6">
+        <h3>If Else</h3>
+        <span>Ejecuta una sentencia si una condición específicada es evaluada como verdadera. Si la condición es evaluada como falsa, otra sentencia puede ser ejecutada</span>
+        <h4>Ejemplo:</h4>
+        <span>Si la suma de los siguientes numeros es par aparecera un mensaje debajo, caso contrario, ten cuidado</span> 
+        <input type="number" id="number1">
+        <input type="number" id="number2">
+        <button id="add">Sumar</button>
+        <button id="clean">Limpiar</button>
+        <div class="resultDiv">Hola Mundo!!</div>
+      </div>
+      <!-- Tipos de Datos en JavaScript -->
+      <div class="widget7">
+        <h2 class="titulo">Tipos de Datos JavaScript</h2>
+        <div class="table">
+            <table class="datetypes">
+            <tr>
+              <th>Tipo de Dato</th>
+              <th>Descripción</th>
+              </tr>
+              <tr class="primitive">
+              <td>Tipos de Datos Primitivos</td>
+              <td>Representan valores simples en JavaScript.</td>
+              </tr>
+              <tr class="primitive">
+              <td>Number</td>
+              <td>Representa números, tanto enteros como decimales.</td>
+              </tr>
+              <tr class="primitive">
+              <td>String</td>
+              <td>Representa una secuencia de caracteres.</td>
+              </tr>
+              <tr class="primitive">
+              <td>Boolean</td>
+              <td>Representa un valor lógico: verdadero o falso.</td>
+              </tr>
+              <tr class="primitive">
+              <td>Null</td>
+              <td>Representa la ausencia intencional de cualquier objeto o valor.</td>
+              </tr>
+              <tr class="primitive">
+              <td>Undefined</td>
+              <td>Representa una variable que no tiene un valor asignado.</td>
+              </tr>
+              <tr class="object">
+              <td>Objetos</td>
+              <td>Representan una colección de propiedades relacionadas.</td>
+              </tr>
+              <tr class="object">
+              <td>Array</td>
+              <td>Representa una lista ordenada de valores.</td>
+              </tr>
+              <tr class="object">
+              <td>Object</td>
+              <td>Representa un objeto con propiedades y métodos.</td>
+              </tr>
+              <tr class="object">
+              <td>Function</td>
+              <td>Representa un bloque de código reutilizable.</td>
+              </tr>
+              <tr class="special">
+              <td>Tipos de Datos Especiales</td>
+              <td>Representan valores especiales en JavaScript.</td>
+              </tr>
+              <tr class="special">
+              <td>Symbol</td>
+              <td>Representa un valor único e inmutable que se utiliza como identificador de propiedad.</td>
+              </tr>
+          </table>
+        </div>  
+      </div>
+      <div class="widget8">
+      </div>
+      <div class="widget9">
+      </div>
+    </section>
+  </div>
+  <script src="index.js"></script>
 </body>
 </html>
