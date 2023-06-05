@@ -61,7 +61,9 @@ body {
 .widget6, 
 .widget7, 
 .widget8, 
-.widget9  {
+.widget9,
+.widget10,
+.widget11  {
     background-color: var(--bg-100);
     padding: 10px;
     display: flex;
@@ -72,7 +74,6 @@ body {
 
 .widget1,
 .widget4,
-.widget5,
 .widget7{
     background-color: var(--primary-200);
 }
@@ -81,8 +82,12 @@ h2{
 text-align: center;
 cursor: pointer;
 }
+h4{
+    text-align: center;
+    cursor: pointer;
+}
 
-/* Ocultamos las tablas */
+/* Ocultamos objetos */
 
 .variabletypes{
     display: none;
@@ -93,7 +98,10 @@ cursor: pointer;
 .datetypes{
     display: none;
 }
-.what-is-scope{
+.see-definition{
+    display: none;
+}
+.see-example{
     display: none;
 }
 
@@ -122,4 +130,10 @@ th {
     text-align: center;
     font-size: 1rem;
     color: var(--bg-100);
+}
+
+/* Switch */
+
+#result {
+    font-size: 1rem;
 }

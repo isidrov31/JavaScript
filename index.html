@@ -64,19 +64,31 @@
       <!-- Prompt -->
       <div class="widget2">
         <h3>El Prompt</h3>
-        <span>El prompt es un método en JavaScript que muestra un cuadro de diálogo modal en el navegador, donde el usuario puede ingresar texto.
-        </span>
-        <input id="prompt" classtype="text" placeholder="Escribe una pregunta">
-        <button id="executePrompt">Ver Prompt</button>
+        <h4 id="definition">Definicion:</h4>
+        <div class="see-definition">
+          <span>El prompt es un método en JavaScript que muestra un cuadro de diálogo modal en el navegador, donde el usuario puede ingresar texto.
+          </span>
+        </div>
+        <h4 id="example">Ejemplo:</h4>
+        <div class="see-example">
+          <input id="prompt" classtype="text" placeholder="Escribe una pregunta">
+          <button id="executePrompt">Ver Prompt</button>
+        </div>
       </div>
 
       <!-- Alert -->
       <div class="widget3">
         <h3>Alert</h3>
-        <span>El método Window.alert() muestra un diálogo de alerta con un mensaje opcional, y aguardará hasta que el usuario cierre la ventana de diálogo.
-        </span>
-        <input id="alert" classtype="text" placeholder="Escribe una frase">
-        <button id="executeAlert">Ver Alert</button>
+        <h4 id="definition">Definicion:</h4>
+        <div class="see-definition">
+          <span>El método Window.alert() muestra un diálogo de alerta con un mensaje opcional, y aguardará hasta que el usuario cierre la ventana de diálogo.
+          </span>
+        </div>
+        <h4 id="example">Ejemplo:</h4>
+        <div class="see-example">
+          <input id="alert" classtype="text" placeholder="Escribe una frase">
+          <button id="executeAlert">Ver Alert</button>
+        </div>
       </div>
 
       <!-- Tipos de Operadores en JavaScript -->
@@ -194,8 +206,9 @@
 
       <!-- Scope -->
       <div class="widget5">
-        <h2 class="titulo">Scope</h2>
-        <div class="what-is-scope">
+        <h3>Scope</h3>
+        <h4 id="definition">Definicion:</h4>
+        <div class="see-definition">
         <ul>
           <li><b>Scope Global:</b>Las variables declaradas fuera de cualquier función tienen un alcance global. Esto significa que son accesibles desde cualquier parte del código, ya sea dentro de funciones, bucles o bloques de código.</li>
           <li><b>Scope Local:</b>Las variables declaradas dentro de una función tienen un alcance local. Esto significa que solo pueden ser accedidas desde dentro de la función donde se declaran. Estas variables no están disponibles fuera de la función y se eliminan de la memoria una vez que la función finaliza su ejecución.</li>
@@ -207,15 +220,21 @@
       <!-- IF ELSE -->
       <div class="widget6">
         <h3>If Else</h3>
-        <span>Ejecuta una sentencia si una condición específicada es evaluada como verdadera. Si la condición es evaluada como falsa, otra sentencia puede ser ejecutada</span>
-        <h4>Ejemplo:</h4>
-        <span>Si la suma de los siguientes numeros es par aparecera un mensaje debajo, caso contrario, ten cuidado</span> 
-        <input type="number" id="number1">
-        <input type="number" id="number2">
-        <button id="add">Sumar</button>
-        <button id="clean">Limpiar</button>
-        <div class="resultDiv">Hola Mundo!!</div>
-      </div>
+        <h4 id="definition">Definicion:</h4>
+        <div class="see-definition">
+          <span>Ejecuta una sentencia si una condición específicada es evaluada como verdadera. Si la condición es evaluada como falsa, otra sentencia puede ser ejecutada</span>
+          </div>
+        <h4 id="example">Ejemplo:</h4>
+        <div class="see-example">
+          <span>Si la suma de los siguientes numeros es par aparecera un mensaje debajo, caso contrario, ten cuidado</span> 
+          <input type="number" id="number1" min="0" max="100">
+          <input type="number" id="number2" min="0" max="100">
+          <button id="add">Sumar</button>
+          <button id="clean1">Limpiar</button>
+          <div class="resultDiv">Hola Mundo!!</div>
+          </div>
+        </div>
+
       <!-- Tipos de Datos en JavaScript -->
       <div class="widget7">
         <h2 class="titulo">Tipos de Datos JavaScript</h2>
@@ -276,9 +295,97 @@
           </table>
         </div>  
       </div>
+
+      <!-- Switch -->
       <div class="widget8">
+        <h3>Switch</h3>
+        <h4 id="definition">Definicion:</h4>
+        <div class="see-definition">
+          <span>La declaración switch se utiliza para realizar una selección múltiple basada en el valor de una expresión. Permite ejecutar diferentes bloques de código dependiendo del valor que coincida con los case especificados.</span>
+          <ul>
+            <li><b>Expression:</b> es la expresión que se evalúa y se compara con los case para determinar qué bloque de código se ejecutará. Puede ser cualquier expresión que produzca un valor, como una variable, una constante o una llamada a una función.</li>
+            <li><b>Case:</b> es una etiqueta que representa un valor específico con el cual se compara la expresión. Si la expresión coincide con el valor del case, se ejecutará el bloque de código asociado a ese case.</li>
+            <li><b>Break:</b> Después de cada bloque de código en un case, se utiliza la palabra clave break para salir del switch. Esto evita que se ejecuten los bloques de código de los case siguientes. Si se omite el break, la ejecución continuará hacia el siguiente case, incluso si la expresión no coincide con su valor.</li>
+            <li><b>Default:</b>El bloque de código default se ejecuta si ninguno de los case coincide con el valor de la expresión. Es opcional y se utiliza para proporcionar un comportamiento predeterminado cuando no hay coincidencias.</li>
+          </ul>
+        </div>
+        <h4 id="example">Ejemplo:</h4>
+        <div class="see-example">
+          <p>A continuacion te ayudaremos a saber, dentro de los proximos 50 años, si el año que ingreses es bisiesto</p>
+          <input id="age" type="number" min="2023" max="2073">
+          <button id="consult">Consultar</button>
+          <button id="clean2">Limpiar</button> <br> <br>
+          <Span id="result"></Span>
+        </div>
       </div>
+
+      <!-- For -->
       <div class="widget9">
+        <h3>For</h3>
+        <h4 id="definition">Definicion:</h4>
+        <div class="see-definition">
+          <span>Crea un bucle que consiste en tres expresiones opcionales, encerradas en paréntesis y separadas por puntos y comas, seguidas de una sentencia ejecutada en un bucle. <br> <br>
+          for ([expresion-inicial]; [condicion]; [expresion-final])sentencia <br> <br>
+          </span>
+          <ul>
+            <li><b>Expresion-inicial:</b>Una expresión (incluyendo las expresiones de asignación) o la declaración de variable. Típicamente se utiliza para usarse como variable contador.</li>
+            <li><b>Condicion:</b> Una expresión para ser evaluada antes de cada iteración del bucle. Si esta expresión se evalúa como verdadera, se ejecuta sentencia. Esta comprobación condicional es opcional. Si se omite, la condición siempre se evalúa como verdadera. Si la expresión se evalúa como falsa, la ejecución salta a la primera expresión que sigue al constructor de for.</li>
+            <li><b>Expresion-final:</b> Una expresión para ser evaluada al final de cada iteración del bucle. Esto ocurre antes de la siguiente evaluación de la condicion. Generalmente se usa para actualizar o incrementar la variable contador.</li>
+            <li><b>Sentencia:</b>se ejecuta mientras la condición se evalúa como verdadera.</li>
+          </ul>
+        </div>
+        <h4 id="example">Ejemplo:</h4>
+        <div class="see-example">
+          <p>Mediante el bucle for vamos ayudar a Naruto a generar clones</p>
+          <input type="number" id="clones" min="0" max="5">
+          <button id="trigger">Generar</button>
+          <button id="clean3">Limpiar</button> <br> <br>
+          <span id="generated-clones"></span>
+        </div>
+      </div>
+
+      <!-- Do While -->
+      <div class="widget10">
+        <h3>Do while</h3>
+        <h4 id="definition">Definicion:</h4>
+        <div class="see-definition">
+          <p>
+            El bucle do-while en JavaScript es una estructura de control que ejecuta un bloque de código al menos una vez y luego se repite mientras se cumple una condición especificada. La sintaxis del bucle do-while es la siguiente: <br> <br>
+            do {
+              // Bloque de código a ejecutar al menos una vez
+            } while (condición);
+          </p>
+        </div>
+        <h4 id="example">Ejemplo:</h4>
+        <div class="see-example">
+          <p>En el siguiente ejemplo codeamos un Do While al cual le pedimos que sume a valor ingresado 1 (hasta que tenga dos digitos) siempre y cuando el valor ingresado sea mayor a 5</p>
+          <input type="number" id="numberInput" min="0">
+          <button id="startButton">Iniciar</button>
+          <button id="clean4">Limpiar</button>
+          <div id="resultDo"></div>
+        </div>
+      </div>
+
+      <!-- Array -->
+      <div class="widget11">
+        <h3>Array</h3>
+        <h4 id="definition">Definicion:</h4>
+        <div class="see-definition">
+          <p>
+            Un array, en programación, es una estructura de datos que puede contener múltiples valores en una sola variable. Es una forma conveniente de almacenar y acceder a un conjunto de elementos relacionados.Un array se compone de elementos que están organizados en una secuencia ordenada. Cada elemento del array se almacena en una posición específica, conocida como índice. Los índices comienzan desde 0 y van incrementando en 1 para cada elemento adicional.
+          </p>
+        </div>
+        <h4 id="example">Ejemplo:</h4>
+        <div class="see-example">
+          <p>Ingrese 4 personajes de Naruto para generar un String</p>
+          <input type="text" class="naruto">
+          <input type="text" class="naruto">
+          <input type="text" class="naruto">
+          <input type="text" class="naruto"><br>
+          <button id="startButtonNaruto">Generar</button>
+          <button id="clean5">Limpiar</button>
+          <div id="narutos"></div>
+        </div>
       </div>
     </section>
   </div>
