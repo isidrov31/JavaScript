@@ -9,7 +9,12 @@
 </head>
 <body>
   <div class="contenedor">
-    <div class="navbar">Navbar</div>
+    <div class="navbar">
+      <ul class="navbar-list">
+        <a href="">Metodos de String</a>
+        <a href="arrays.html">Metodos de Array</a>
+      </ul>
+    </div>
     <section id="widget">
 
       <!-- Tipos de Variables en JavaScript -->
@@ -377,7 +382,7 @@
         </div>
         <h4 id="example">Ejemplo:</h4>
         <div class="see-example">
-          <p>Ingrese 4 personajes de Naruto para generar un String</p>
+          <p>Ingrese 4 personajes de Naruto para generar un Array</p>
           <input type="text" class="naruto">
           <input type="text" class="naruto">
           <input type="text" class="naruto">
@@ -387,6 +392,82 @@
           <div id="narutos"></div>
         </div>
       </div>
+
+      <!-- Objetos -->
+      <div class="widget12">
+        <h3>Objetos</h3>
+        <h4 id="definition">Definicion:</h4>
+        <div class="see-definition">
+          <p>
+            En JavaScript, un objeto es un entidad independiente con propiedades y tipos.Un objeto de JavaScript tiene propiedades asociadas a él. Una propiedad de un objeto se puede explicar como una variable adjunta al objeto. Las propiedades de un objeto básicamente son lo mismo que las variables comunes de JavaScript, excepto por el nexo con el objeto. Las propiedades de un objeto definen las características del objeto. Accedes a las propiedades de un objeto con una simple notación de puntos:
+            objectName.propertyName <br> <br>
+            <strong>Creación de objetos mediante objetos literales:</strong> 
+            Puedes crear objetos directamente utilizando objetos literales, que son simplemente una lista de pares clave-valor encerrados entre llaves {}. Cada clave es una propiedad del objeto y cada valor es el valor asignado a esa propiedad. Aquí tienes un ejemplo: <br>
+            const miObjeto = { <br>
+            propiedad1: valor1, <br>
+            propiedad2: valor2, <br>
+            };<br><br>
+            <strong>Creación de objetos utilizando el constructor Object:</strong> 
+            Creación de objetos utilizando el constructor Object:
+            JavaScript proporciona el constructor Object que se puede utilizar para crear objetos vacíos o agregar propiedades a un objeto existente. Aquí tienes un ejemplo: <br>
+            const miObjeto = new Object();<br>
+            miObjeto.propiedad1 = valor1; <br>
+            miObjeto.propiedad2 = valor2;<br><br>
+            <strong>Creación de objetos utilizando una función constructora:</strong> 
+            Puedes definir una función constructora y luego crear nuevos objetos utilizando esa función con la palabra clave new. Dentro de la función constructora, puedes definir propiedades y métodos para los objetos creados. Aquí tienes un ejemplo: <br>
+            function MiObjeto(propiedad1, propiedad2) {<br>
+            this.propiedad1 = propiedad1;<br>
+            this.propiedad2 = propiedad2;<br>
+           // ... <br>
+            }<br>
+            const miNuevoObjeto = new MiObjeto(valor1, valor2);<br><br>
+          </p>
+        </div>
+      </div>
+
+      <!-- Clases -->
+      <div class="widget13">
+        <h3>Clases</h3>
+        <h4 id="definition">Definicion:</h4>
+        <div class="see-definition">
+          <p>
+            Una clase en JavaScript actúa como una plantilla o un plano para crear objetos. Define propiedades y métodos que serán compartidos por todas las instancias de objetos creadas a partir de esa clase. Aquí tienes un ejemplo de cómo se crea una clase en JavaScript: <br>  <br>  
+            class MiClase { <br>
+              constructor(propiedad1, propiedad2) { <br>
+                this.propiedad1 = propiedad1; <br>
+                this.propiedad2 = propiedad2; <br>
+              } <br> <br>
+              Para crear un objeto a partir de una clase, se utiliza la palabra clave new seguida del nombre de la clase y los argumentos necesarios para el constructor, si los hay: <br> <br>
+              const miObjeto = new MiClase(valor1, valor2);
+          </p>
+        </div>
+      </div>
+
+      <!-- Closures -->
+      <div class="widget14">
+        <h3>Closures</h3>
+        <h4 id="definition">Definicion:</h4>
+        <div class="see-definition">
+          <p>
+            es una combinación de una función y el entorno léxico en el cual se declaró esa función. Un closure permite que una función acceda y conserve referencias a variables y parámetros externos, incluso después de que la función haya finalizado su ejecución. <br><br>
+            function exterior() { <br>
+              var mensaje = 'Hola'; <br> <br>
+            
+              function interior() { <br>
+                console.log(mensaje); <br>
+              } <br> <br>
+            
+              return interior; <br>
+            } <br> <br>
+            
+            var miFuncion = exterior(); <br>
+            miFuncion(); // Imprime 'Hola' <br> <br>
+            En este ejemplo, la función interior es un closure. Aunque se ejecuta fuera de la función exterior, aún tiene acceso a la variable mensaje que se declaró en el ámbito de exterior. Al llamar a exterior(), se devuelve la función interior y se asigna a miFuncion. Luego, al llamar a miFuncion(), se imprime 'Hola'.
+            El closure permite que interior conserve el entorno léxico en el que se declaró, incluyendo todas las variables y parámetros que estaban disponibles en ese momento. Esto es útil cuando se necesitan funciones que recuerden ciertos valores o estados incluso después de que la función externa haya terminado su ejecución.
+          </p>
+        </div>
+      </div>
+
     </section>
   </div>
   <script src="index.js"></script>

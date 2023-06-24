@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos de Array</title>
+    <link rel="stylesheet" href="arrays.css">
+</head>
+<body>
+    <div class="contenedor">
+        <nav>
+            METODOS DE ARRAY
+        </nav>
+        <section id="widget">
+
+            <!-- LENGTH -->
+            <div class="widget1">
+                <h2>LENGTH</h2>
+                <h3 id="definition">Definición</h3>
+                <div class="see-definition">
+                <p>Se utiliza para obtener la longitud de un array, es decir, la cantidad de elementos que contiene.</p>
+                </div>
+                <h4 id="example">Ejemplo:</h4>
+                <div class="see-example">
+                <span>Hemos definido un array en una constante, presione el boton para saber su longitud</span>
+                <button id="length">Longitud</button>
+                <div id="resultado"></div>
+                </div>
+            </div>
+
+            <!-- INDEX OF -->
+            <div class="widget2">
+                <h2>INDEX OF</h2>
+                <h3 id="definition">Definición</h3>
+                <div class="see-definition">
+                <p>Se utiliza en JavaScript para encontrar la primera aparición de un elemento específico en un array y devuelve su índice. Si el elemento no se encuentra en el array, el método devuelve -1.</p>
+                </div>
+                <h4 id="example">Ejemplo:</h4>
+                <div class="see-example">
+                <span>Hemos definido un array en una constante, con los siguientes nombres Depaul, Dibu, Messi. Escribalos en el cuadro de texto para ver su indice</span>
+                <input id="input" type="text">
+                <button id="buttonIndexOf">Ver indice</button>
+                <div id="resultadoIndexOf"></div>
+                </div>
+            </div>
+
+            <!-- POP -->
+            <div class="widget3">
+                <h2>POP</h2>
+                <h3 id="definition">Definición</h3>
+                <div class="see-definition">
+                <p>Se utiliza para eliminar el último elemento de un array  y devolver ese elemento eliminado. Este método modifica el array  original.</p>
+                </div>
+                <h4 id="example">Ejemplo:</h4>
+                <div class="see-definition">
+                <span>Para este ejemplo armamos el siguiente array: Messi, Depaul, Dibu y Papu. Al presionar el siguiente boton quitamos al jugador mas mufa </span>
+                <button id="buttonPop">Ver resultado</button>
+                <div id="resultadoPop"></div>
+                </div>
+            </div>
+
+            <!-- SHIFT -->
+            <div class="widget4">
+                <h2>SHIFT</h2>
+                <h3 id="definition">Definición</h3>
+                <div class="see-definition">
+                <p>Se utiliza para eliminar el primer elemento de un arreglo y devolver ese elemento eliminado.</p>
+                </div>
+                <h4 id="example">Ejemplo:</h4>
+                <span>Para este ejemplo armamos el siguiente array: Messi, Depaul, Dibu y Papu. Al presionar el siguiente, vamos a obtener al mejor jugador de la historia</span>
+                <button id="buttonShift">Ver resultado</button>
+                <div id="resultadoShift"></div>
+            </div>
+
+            <!-- UNSHIFT -->
+            <div class="widget4">
+                <h2>UNSHIFT</h2>
+                <h3 id="definition">Definición</h3>
+                <div class="see-definition">
+                <p>Se utiliza para agregar uno o más elementos al inicio de un array y devuelve la nueva longitud del array. Este método modifica el array original.</p>
+                </div>
+                <h4 id="example">Ejemplo:</h4>
+                <span>Para este ejemplo sumamos al otro mejor jugador de la historia. Al presionar el siguiente, vamos vamos a ver la longitud del nuevo array</span>
+                <button id="buttonUnshift">Ver resultado</button>
+                <div id="resultadoUnshift"></div>
+            </div>
+
+            <!-- REVERSE -->
+            <div class="widget5">
+                <h2>REVERSE</h2>
+                <h3 id="definition">Definición</h3>
+                <div class="see-definition">
+                <p>Se utiliza para invertir el orden de los elementos en un array. Este método modifica el array original y no devuelve un nuevo array. Es importante tener en cuenta que el método reverse() modifica el array original directamente y no devuelve un nuevo array. Por lo tanto, el array original se verá alterado después de llamar a reverse().</p>
+                </div>
+                <h4 id="example">Ejemplo:</h4>
+                <span>Para este ejemplo aplicaremos reverse en el siguiente array ['Messi', 'Depaul', 'Dibu'] y lo imprimiremos presionando el boton debajo:</span>
+                <button id="buttonReverse">Reverse</button>
+                <div id="resultadoReverse"></div>
+            </div>
+
+            <!-- TO STRING -->
+            <div class="widget6">
+                <h2>TO STRING</h2>
+                <h3 id="definition">Definición</h3>
+                <div class="see-definition">
+                <p>Se utiliza para convertir un valor a su representación en forma de cadena de caracteres (string).</p>
+                </div>
+                <h4 id="example">Ejemplo:</h4>
+                <span>Para este ejemplo aplicaremos to string en el siguiente array ['Messi', 'Depaul', 'Dibu'] y lo imprimiremos presionando el boton debajo:</span>
+                <button id="buttonTostring">To string</button>
+                <div id="resultadoTostring"></div>
+            </div>
+
+            <!-- JOIN -->
+            <div class="widget6">
+                <h2>JOIN</h2>
+                <h3 id="definition">Definición</h3>
+                <div class="see-definition">
+                <p>Se utiliza para combinar todos los elementos de un array en una cadena de caracteres (string). Este método no modifica el array original y devuelve la cadena resultante.</p>
+                </div>
+                <h4 id="example">Ejemplo:</h4>
+                <span>Para este ejemplo aplicaremos join, para convertir el array en string y aplicarle un espacio y una coma ['Messi', 'Depaul', 'Dibu'] y lo imprimiremos presionando el boton debajo:</span>
+                <button id="buttonJoin">JOIN</button>
+                <div id="resultadoJoin"></div>
+            </div>
+
+            <!-- MAP -->
+            <div class="widget7">
+                <h2>MAP</h2>
+                <h3 id="definition">Definición</h3>
+                <div class="see-definition">
+                <p>Se utiliza para crear un nuevo array a partir de otro array existente, aplicando una función a cada elemento del array original.</p>
+                </div>
+                <h4 id="example">Ejemplo:</h4>
+                <span>Para este ejemplo aplicaremos map, para ver el indice de cada elemento del array ['Messi', 'Depaul', 'Dibu'] y lo imprimiremos presionando el boton debajo:</span>
+                <button id="buttonMap">Map</button>
+                <div id="resultadoMap"></div>
+            </div>
+
+            <!-- CONCAT -->
+            <div class="widget8">
+                <h2>CONCAT</h2>
+                <h3 id="definition">Definición</h3>
+                <div class="see-definition">
+                <p>Se utiliza para combinar dos o más arrays y crear un nuevo array resultante. Este método no modifica los arrays existentes, sino que devuelve un nuevo array que contiene los elementos de los arrays concatenados.</p>
+                </div>
+                <h4 id="example">Ejemplo:</h4>
+                <span>Para este ejemplo aplicaremos concat, para agregar a los tres mejores jugadores de la seleccion un array que contiene al jefe de la Scaloneta y lo imprimiremos presionando el boton debajo:</span>
+                <button id="buttonConcat">Concat</button>
+                <div id="resultadoConcat"></div>
+            </div>
+
+            <!-- SLICE -->
+            <div class="widget9">
+                <h2>SLICE</h2>
+                <h3 id="definition">Definición</h3>
+                <div class="see-definition">
+                <p>Se utiliza para extraer una porción o subconjunto de elementos de un array y crear un nuevo array con esos elementos. El método slice() no modifica el array original, sino que devuelve un nuevo array que contiene los elementos seleccionados.</p>
+                </div>
+                <h4 id="example">Ejemplo:</h4>
+                <span>Para este ejemplo aplicaremos slice, para tomar del array ['Scaloni', 'Depaul', 'Messi', 'Dibu'] al mejor jugador de la historia y lo imprimiremos presionando el boton debajo:</span>
+                <button id="buttonSlice">Slice</button>
+                <div id="resultadoSlice"></div>
+            </div>
+
+            <!-- FILTER -->
+            <div class="widget10">
+                <h2>FILTER</h2>
+                <h3 id="definition">Definición</h3>
+                <div class="see-definition">
+                <p>Se utiliza para crear un nuevo array con todos los elementos que cumplan cierta condición especificada por una función de filtrado. Este método no modifica el array original, sino que devuelve un nuevo array que contiene solo los elementos que pasan el filtro.</p>
+                </div>
+                <h4 id="example">Ejemplo:</h4>
+                <span>Para este ejemplo tomaremos la ultima preseleccion realizada por la Scaloneta para la gira de Asia, dividemos a los jugadores en 3 para ver el recambio, primer corte "Vieja Guardia" jugadores de mas de 27 años; segundo corte el "Presente" jugadores de 23 a 27 años inclusive y tercer corte los "Pibes" de 22 años o menos. Presione los botones para ver los resultados</span>
+                <button id="ViejaGuardia">Vieja Guardia</button>
+                <button id="Presente">Presente</button>
+                <button id="Pibes">Pibes</button>
+                <div id="resultadoFilter"></div>
+            </div>
+
+        </section>
+        METODOS DE STRING
+
+LENGTH
+TOUPPERCASE
+TOLOWERCASE
+REPLACE
+TRIM
+SPLIT
+TYPE OF
+INCLUDE
+REPLACE ALL
+    </div>
+    <script src="arrays.js"></script>
+</body>
+</html>

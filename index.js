@@ -19,6 +19,10 @@ const fifthDefinition = definition[4];
 const sixthDefinition = definition[5];
 const seventhDefinition = definition[6];
 const eighthDefinition = definition [7];
+const ninethDefinition = definition [8];
+const tenthDefinition = definition [9];
+const eleventhDefinition = definition[10];
+
 
 const example = document.querySelectorAll('#example')
 const firstExample = example [0];
@@ -29,6 +33,7 @@ const sixthExample = example[4];
 const seventhExample = example[5];
 const eighthExample = example[6];
 
+
 const seeDefinition = document.querySelectorAll('.see-definition')
 const firstSeeDefinition = seeDefinition[0];
 const secondSeeDefinition = seeDefinition[1];
@@ -38,6 +43,10 @@ const fifthSeeDefinition = seeDefinition[4];
 const sixthSeeDefinition = seeDefinition[5];
 const seventhSeeDefinition = seeDefinition[6];
 const eighthSeeDefinition = seeDefinition[7];
+const ninethSeeDefinition = seeDefinition[8];
+const tenthSeeDefinition = seeDefinition [9];
+const eleventhSeeDefinition = seeDefinition [10];
+
 
 const seeExample = document.querySelectorAll('.see-example')
 const firstSeeExample = seeExample[0];
@@ -47,6 +56,7 @@ const fourthSeeExample = seeExample[3];
 const sixthSeeExample = seeExample[4];
 const seventhSeeExample = seeExample[5];
 const eighthSeeExample = seeExample[6];
+
 
 
 
@@ -114,6 +124,31 @@ eighthDefinition.addEventListener('click', () => {
             }
         }   
 );
+ninethDefinition.addEventListener('click', () => {
+    if (ninethSeeDefinition.style.display === 'none') {
+        ninethSeeDefinition.style.display = 'block';
+    } else { 
+        ninethSeeDefinition.style.display = 'none';
+            }
+        }   
+);
+tenthDefinition.addEventListener('click', () => {
+    if (tenthSeeDefinition.style.display === 'none') {
+        tenthSeeDefinition.style.display = 'block';
+    } else { 
+        tenthSeeDefinition.style.display = 'none';
+            }
+        }   
+);
+eleventhDefinition.addEventListener('click', () => {
+    if (eleventhSeeDefinition.style.display === 'none') {
+        eleventhSeeDefinition.style.display = 'block';
+    } else { 
+        eleventhSeeDefinition.style.display = 'none';
+            }
+        }   
+);
+
 
 firstExample.addEventListener('click', () => {
     if (firstSeeExample.style.display === 'none') {
@@ -171,6 +206,7 @@ eighthExample.addEventListener('click', () => {
             }
         }   
 );
+
 
 
 // Manejo de tablas con click
@@ -319,12 +355,12 @@ let resultDo = document.getElementById('resultDo');
 let clean4 = document.getElementById('clean4');
 
 startButton.addEventListener('click', () => {
-  let number = parseInt(numberInput.value);
-  
-  do {
+    let number = parseInt(numberInput.value);
+    
+    do {
     resultDo.textContent += number + '';
     number += 1;
-  } while (number > 5 && number.toString().length < 2);
+    } while (number > 5 && number.toString().length < 2);
 });
 
 clean4.addEventListener('click', () =>{

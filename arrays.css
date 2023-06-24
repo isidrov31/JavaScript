@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    /* border: 1px solid red; */
+    }
+    
+    :root{
+        --primary-100:#7FB3D5;
+        --primary-200:#6296b7;
+        --primary-300:#195775;
+        --accent-100:#F7CAC9;
+        --accent-200:#926b6a;
+        --text-100:#333333;
+        --text-200:#5c5c5c;
+        --bg-100:#F5F5DC;
+        --bg-200:#ebebd2;
+        --bg-300:#c2c2aa;
+    }
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: 10px;
+    }
+
+    .contenedor {
+        width: 80%;
+        max-height: 95%;
+        display: grid;
+        grid-template-columns: 1fr 3fr; /* Dos columnas, cada una con 2 fracciones */
+        grid-gap: 10px; /* Espacio entre las celdas del grid */
+        background-color:var(--bg-200);
+        overflow: auto;
+        border: 1px solid ;
+        border-radius: 5px;
+    
+    }
+
+    #widget {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas con 1 fracción cada una */
+        grid-gap: 10px; /* Espacio entre las celdas del grid */
+        padding: 2px;
+    }
+
+    .widget1,
+    .widget2,
+    .widget3,
+    .widget4,
+    .widget5,
+    .widget6,
+    .widget7,
+    .widget8,
+    .widget9,
+    .widget10  {
+        background-color: var(--bg-100);
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 20px 30px;
+    }
+
+    .see-definition,
+    .see-example{
+        display: none;
+    }
+
+    #definition,
+    #example{
+        cursor: pointer;
+    }
